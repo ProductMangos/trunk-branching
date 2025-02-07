@@ -6,6 +6,27 @@
     <title>Trunk Branching</title>
 </head>
 <body>
-    <h1>Trunk</h1>
+    <div></div>
+    <button id="click1">Click 1</button>
+    <button id="click2">Click 2</button>
+    <button id="click3">Click 3</button>
 </body>
+<script>
+    const elements = {
+        div: document.querySelector('div'),
+        click1: document.querySelector('#click1'),
+        click2: document.querySelector('#click2'),
+        click3: document.querySelector('#click3')
+    }
+
+    elements.click1.addEventListener('click', () => {
+        elements.div.textContent = 'Click 1'
+    })
+    elements.click2.addEventListener('click', () => {
+        elements.div.textContent = 'Click 2'
+    })
+    elements.click3.addEventListener('click', () => {
+        elements.div.textContent = 'Click 3'
+    })
+</script>
 </html>
